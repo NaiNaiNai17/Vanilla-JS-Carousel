@@ -9,9 +9,11 @@ arrowRight.addEventListener("click", () => {
       item.classList.add("right");
       if (index === images.length - 1) {
         images[0].classList.add("active");
+        images[0].classList.remove("right");
         break;
       }
       images[index + 1].classList.add("active");
+      images[index + 1].classList.remove("right");
       break;
     }
   }

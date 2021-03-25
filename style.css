@@ -43,6 +43,7 @@ img {
 
 .left {
   transform: translateX(600px);
+  transition: 2s;
 }
 .right {
   transform: translateX(-600);
