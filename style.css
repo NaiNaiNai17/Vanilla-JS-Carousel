@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1000;
+}
+.arrow-left {
+  left: 1%;
+}
+.arrow-right {
+  right: 1%;
+}
+
+.active {
+  z-index: 500;
+}
+
+.left {
+  transform: translateX(600px);
+}
+.right {
+  transform: translateX(-600);
+  transition: 2s;
+}
